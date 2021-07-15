@@ -49,7 +49,7 @@ const News = (props) => {
 
                     return (
                         <div className="news-block">
-                            <img src={requests.imageUrl + item.изображение} />
+                            <img src={"http://35.193.52.116:8000" + item.изображение} />
                             <div>
                                 <span>{item.date}</span>
                                 <p>{item.название}</p>

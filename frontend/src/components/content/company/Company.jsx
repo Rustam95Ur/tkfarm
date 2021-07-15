@@ -66,7 +66,7 @@ const Company = () => {
                             <p>{ceo.данные}</p>
                         </div>
                         <div className="ceo-right">
-                            <img src={requests.imageUrl + ceo.изображение} />
+                            <img src={"http://35.193.52.116:8000" + ceo.изображение} />
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Company = () => {
                             return (
                                 <div >
                                     <div>
-                                        <img src={requests.imageUrl + item.изображение} />
+                                        <img src={"http://35.193.52.116:8000" + item.изображение} />
                                     </div>
                                     <p>{item.название}</p>
                                 </div>

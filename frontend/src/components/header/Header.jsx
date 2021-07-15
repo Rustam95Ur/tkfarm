@@ -12,7 +12,7 @@ const logo = (image) => {
     return (
         <div className="header-logo-block">
             <Link to="/">
-                <img src={requests.imageUrl + image} className="header-logo" />
+                <img src={"http://35.193.52.116:8000" + image} className="header-logo" />
             </Link>
         </div>
     );

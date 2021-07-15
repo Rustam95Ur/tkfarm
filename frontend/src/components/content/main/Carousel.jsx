@@ -56,7 +56,7 @@ const CarouselSlide = (props) => {
             <div className="news-main-content">
                 <a href={`/news/${props.slide.id}`} >
                     <div>
-                        <img src={requests.imageUrl + props.slide.изображение}></img>
+                        <img src={"http://35.193.52.116:8000" + props.slide.изображение}></img>
                         <div>
                             <p>
                                 {before}

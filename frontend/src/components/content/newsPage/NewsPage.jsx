@@ -40,7 +40,7 @@ const NewsPage = () => {
                     <div className="icons" id="fb"></div>
                 </div>
                 <div className="newspage-right">
-                    <img src={requests.imageUrl + dt.изображение} />
+                    <img src={"http://35.193.52.116:8000" + dt.изображение} />
                     <div className="newspage-content">
                         <p>{dt.date}</p>
                         <p>{dt.название}</p>
@@ -55,7 +55,7 @@ const NewsPage = () => {
                             ++cnt;
                             return (
                                 <div className="news-block" id="str">
-                                    <img src={requests.imageUrl + item.изображение} />
+                                    <img src={"http://35.193.52.116:8000" + item.изображение} />
                                     <div>
                                         <span>{item.date}</span>
                                         <p>{item.название}</p>

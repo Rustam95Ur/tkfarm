@@ -22,7 +22,7 @@ const Products = () => {
                     return (
                         <div className="item-wrapper">
                             <div className="item-left">
-                                <img src={requests.imageUrl + item.изображение} />
+                                <img src={"http://35.193.52.116:8000" + item.изображение} />
                             </div>
                             <div className="item-right">
                                 <p>{item.объем}</p>
