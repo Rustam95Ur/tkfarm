@@ -45,7 +45,7 @@ const MainCompany = () => {
                                     </div>
                                     <img className="wow animate__fadeInRight"
                                         data-wow-iteration="1" data-wow-offset="100"
-                                        src={"http://35.193.52.116:8000" + item.изображение}></img>
+                                        src={requests.imageUrl + item.изображение}></img>
                                 </div>
                             );
                         } else {
@@ -53,7 +53,7 @@ const MainCompany = () => {
                                 <div>
                                     <img className="wow animate__fadeInLeft"
                                         data-wow-iteration="1" data-wow-offset="50"
-                                        src={"http://35.193.52.116:8000" + item.изображение}></img>
+                                        src={requests.imageUrl + item.изображение}></img>
                                     <div className="wow animate__fadeInRight"
                                         data-wow-iteration="1" data-wow-offset="50">
                                         <p>

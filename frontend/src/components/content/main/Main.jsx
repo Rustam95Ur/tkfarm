@@ -48,7 +48,7 @@ import Clue from './Clue';
 //                             // style="display: grid"
 //                             >
 //                                 <div>
-//                                     <img src={"http://35.193.52.116:8000" + item.изображение}></img>
+//                                     <img src={requests.imageUrl + item.изображение}></img>
 //                                     <div>
 //                                         <p><span></span> {item.название}</p>
 //                                         <p>{item.контент}</p>
@@ -110,7 +110,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="main-right wow animate__fadeInRight">
-                        <img src={"http://35.193.52.116:8000" + mainState.изображение}></img>
+                        <img src={requests.imageUrl + mainState.изображение}></img>
                     </div>
                 </div>
             </div>

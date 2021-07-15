@@ -50,7 +50,7 @@ class CarouselSlide extends Component {
                 }
             >
                 <div className="slide-block">
-                    <img src={"http://35.193.52.116:8000" + this.props.slide.изображение} />
+                    <img src={requests.imageUrl + this.props.slide.изображение} />
                 </div>
             </li>
         );
