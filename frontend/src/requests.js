@@ -1,7 +1,7 @@
-const url = "https://workerlimit.xyz/";
+const url = "/";
 
 const requests = {
-    imageUrl: "http://localhost:8000",
+    imageUrl: "127.0.0.1:8000",
     getHeader: url + 'main/header/',
     getMain: url + 'main/main/',
     getMainCompanyBlock: url + 'main/aboutcompany/',
