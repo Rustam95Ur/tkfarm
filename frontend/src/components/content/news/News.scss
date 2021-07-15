@@ -1,0 +1,199 @@
+.news-wrapper {
+    margin-top: 81px;
+}
+
+.news-inside {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#str {
+    height: 196px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 196px;
+    margin-bottom: 32px;
+    >img {
+        height: 100%;
+        width: 269px;
+        object-fit: cover;
+    }
+    >div:nth-child(2) {
+        padding: 31px 48px 0 48px;
+    }
+}
+
+.news-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    >p {
+        font-family: 'Gotham Pro Bold';
+        font-size: 32px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        margin: 0;
+    }
+    >span {
+        font-family: 'Gotham Pro Light';
+        font-size: 16px;
+        line-height: 140%;
+        color: #AEAEAE;
+    }
+}
+
+.news-block {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    margin-bottom: 24px;
+    >img {
+        height: 296px;
+        width: 492px;
+        object-fit: cover;
+    }
+    >div:nth-child(2) {
+        background: #FAFCFF;
+        padding: 35px 48px;
+        >span:nth-child(1) {
+            font-family: 'Gotham Pro';
+            font-size: 16px;
+            line-height: 150%;
+            color: #A8BDCE;
+        }
+        >p:nth-child(2) {
+            font-family: 'Gotham Pro SemiBold';
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin: 8px 0 16px 0;
+        }
+        >p:nth-child(3) {
+            font-family: 'Gotham Pro Light';
+            font-size: 16px;
+            line-height: 150%;
+            color: #333333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        #readmore {
+            font-family: 'Gotham Pro';
+            font-size: 16px;
+            line-height: 150%;
+            color: #2976E9;
+            >div {
+                width: 5px;
+                height: 10px;
+                background: url('../../../img/blue_arr.svg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+        #readmore:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.show-more-wrapper {
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    line-height: 150%;
+    width: 239px;
+    height: 56px;
+    margin: 48px auto 0 auto;
+}
+
+.show-more-wrapper:hover {
+    cursor: pointer;
+    background: #2975E9;
+    border: 1px solid #2975E9;
+    color: #fff;
+    transition: 300ms ease-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width:1400px) {
+    .news-wrapper {
+        margin-top: 40px;
+    }
+    .news-top {
+        >p {
+            font-size: 22px;
+        }
+        >span {
+            display: none;
+        }
+    }
+    .news-block {
+        grid-template-columns: 1fr;
+        >img {
+            width: 100%;
+            height: 463px;
+            object-fit: cover;
+        }
+        >div:nth-child(2) {
+            padding: 32px;
+            >p:nth-child(3) {
+                margin: 0 0 32px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .news-wrapper {
+        margin-top: 24px;
+    }
+    .news-top {
+        margin-bottom: 16px;
+        >p {
+            font-size: 18px;
+        }
+        >span {
+            display: none;
+        }
+    }
+    .news-block {
+        grid-template-columns: 1fr;
+        >img {
+            width: 100%;
+            height: 50vw;
+            object-fit: cover;
+        }
+        >div:nth-child(2) {
+            padding: 32px 16px 16px 16px;
+            >span:nth-child(1) {
+                font-size: 14px;
+            }
+            >p:nth-child(2) {
+                font-family: 'Gotham Pro SemiBold';
+                font-size: 16px;
+            }
+            >p:nth-child(3) {
+                font-size: 14px;
+                margin: 0 0 32px 0;
+                -webkit-line-clamp: 7;
+            }
+            #readmore {
+                font-size: 14px;
+                color: #2976E9;
+            }
+        }
+    }
+    .show-more-wrapper {
+        height: 53px;
+        width: 100%;
+        font-size: 14px;
+    }
+}

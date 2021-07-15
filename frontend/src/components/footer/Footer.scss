@@ -1,0 +1,289 @@
+.footer-wrapper {
+    margin-top: 200px;
+    background: #2975E9;
+    padding-top: 51px;
+    padding-bottom: 1px;
+    >p:nth-child(2) {
+        font-family: 'Gotham Pro Light';
+        font-size: 12px;
+        line-height: 140%;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 14px;
+    }
+}
+
+.footer-inside {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    border-bottom: 1px solid #CCE6FE;
+    padding-bottom: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-left {
+    border-right: 1px solid #CCE6FE;
+    display: flex;
+}
+
+.footer-nav {
+    Link {
+        text-decoration: none;
+    }
+    .footnav {
+        font-family: 'Gotham Pro Light';
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin: 0 0 12px 0;
+    }
+}
+
+.footer-title {
+    font-family: 'Gotham Pro SemiBold';
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.footer-contact {
+    margin-left: 75px;
+}
+
+.footer-main {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0 0 8px 0;
+}
+
+.footer-text {
+    font-family: 'Gotham Pro Light';
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.footer-phone {
+    margin: 36px 0 0 30px;
+}
+
+.footer-right {
+    padding-left: 133px;
+    p {
+        font-family: 'Gotham Pro Bold';
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    form {
+        textarea {
+            width: 94%;
+            height: 90px;
+            background: inherit;
+            border: 1px solid #CCE6FE;
+            padding: 15px;
+            color: #CCE6FE;
+            font-size: 16px;
+            margin-bottom: 16px;
+            resize: none;
+        }
+        textarea::placeholder {
+            font-family: 'Gotham Pro Light';
+            font-size: 16px;
+            line-height: 145%;
+            color: #CCE6FE;
+        }
+        textarea:active,
+        textarea:focus {
+            outline: none;
+        }
+    }
+    div:nth-child(3) {
+        display: flex;
+        align-items: center;
+        float: right;
+        span {
+            font-family: 'Gotham Pro';
+            font-size: 16px;
+            line-height: 145%;
+            color: #FFFFFF;
+        }
+        >div {
+            background: url('../../img/arrow_right.svg');
+            width: 20px;
+            height: 10px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-left: 8px;
+        }
+    }
+    >div:nth-child(3):hover {
+        cursor: pointer;
+        >div {
+            transition: 0.7s ease-in-out;
+            transform: translateX(30%);
+        }
+    }
+}
+
+.footnav.hide,
+.footer-main.hide,
+.footer-text.hide {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .footer-wrapper {
+        padding-top: 40px;
+    }
+    .footer-inside {
+        grid-template-columns: 1fr;
+        border: none;
+        padding-bottom: 0;
+    }
+    .footer-left {
+        margin-top: 48px;
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        width: 460px;
+    }
+    .footer-contact {
+        margin-left: 0;
+    }
+    .footer-right {
+        padding-left: 0;
+        grid-row: 1;
+        p {
+            font-size: 20px;
+        }
+        form {
+            textarea {
+                width: 95.5%;
+            }
+        }
+    }
+    .footer-phone {
+        position: relative;
+        top: -35px;
+        width: auto;
+        margin: 0;
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .footer-wrapper {
+        margin-top: 80px;
+        >p {
+            display: none;
+        }
+    }
+    .footnav.hide,
+    .footer-main.hide,
+    .footer-text.hide {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-wrapper {
+        padding-top: 24px;
+        >p:nth-child(2) {
+            margin-top: 16px;
+        }
+    }
+    .footer-inside {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        border: none;
+        padding-bottom: 0;
+        width: 85%;
+    }
+    .footer-left {
+        border-bottom: 1px solid #CCE6FE;
+        border-top: 1px solid #CCE6FE;
+        padding: 32px 0 16px 0;
+        border-right: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    .footer-contact {
+        margin-left: 0;
+    }
+    .footer-right {
+        width: 100%;
+        padding-left: 0;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        p {
+            font-size: 18px;
+            margin: 0 0 24px 0;
+        }
+        form {
+            width: 100%;
+            textarea {
+                height: 100px;
+                // margin-right: 5%;
+            }
+        }
+        >div:nth-child(3) {
+            span {
+                margin-top: 10px;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .footer-phone {
+        width: auto;
+        margin: 0;
+        grid-row: 3;
+        // grid-column: 2;
+    }
+    .footer-wrapper {
+        margin-top: 80px;
+    }
+    .footer-title {
+        font-family: 'Gotham Pro Bold';
+        font-size: 14px;
+    }
+    .footnav.hide,
+    .footer-main.hide,
+    .footer-text.hide {
+        display: none;
+    }
+    .footnav.show,
+    .footer-text.show,
+    .footer-main.show {
+        display: block;
+    }
+    .bottom {
+        float: right;
+        display: inline-block;
+        width: 15px;
+        height: 10px;
+        background: url('../../img/footer.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .up {
+        float: right;
+        display: inline-block;
+        width: 15px;
+        height: 10px;
+        background: url('../../img/foot_up.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}

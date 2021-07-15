@@ -1,0 +1,223 @@
+// SASS variable for media query breakpoint
+$breakpoint-desktop: 992px;
+// Resetting default styles
+.gallery-wrapper {
+    margin-top: 200px;
+}
+
+.gallery-inside {
+    width: 85%;
+    max-width: 1300px;
+    margin: 0 auto;
+    >p {
+        font-family: 'Gotham Pro Bold';
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0 0 40px 0;
+    }
+}
+
+.gal-carousel__slides {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1300px;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 650px 270px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 16px;
+}
+
+// Fix for jumping arrows
+.gal-carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 210px;
+}
+
+.gal-carousel {
+    position: relative;
+}
+
+// Carousel slides
+.gal-carousel__slide {
+    margin-right: auto;
+    margin-left: auto;
+    list-style-type: none;
+    text-align: center;
+    grid-row: 2;
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &--active {
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1 / span 4;
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.gallery-banner-btns {
+    display: flex;
+    position: relative;
+    top: 360px;
+    z-index: 2;
+    padding: 0 48px;
+    >a:nth-child(2) {
+        margin-left: auto;
+    }
+}
+
+.slide-block {
+    height: 100%;
+    width: 100%;
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Content of slides
+.gal-carousel-slide__content {
+    margin-bottom: 19px;
+    font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    @media (max-width: $breakpoint-desktop - 1px) {
+        font-size: 18px;
+    }
+}
+
+.gal-carousel-slide__author,
+.gal-carousel-slide__source {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 14px;
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 16px;
+    }
+}
+
+.gal-carousel-slide__source {
+    font-style: italic;
+    color: #888;
+}
+
+// Carousel arrows
+.gal-carousel__arrow {
+    background: #fff;
+    border-radius: 100%;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >div {
+        width: 10px;
+        height: 15px;
+    }
+}
+
+#leftarrow {
+    >div:nth-child(1) {
+        background: url('../../../img/arrow_left.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+#rightarrow {
+    >div {
+        background: url('../../../img/arrow_blavk.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.gal-carousel__indicator {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #111;
+    cursor: pointer;
+    opacity: .15;
+    transition: opacity .15s cubic-bezier(.4, 0, 1, 1);
+    &:hover {
+        opacity: .5;
+    }
+    &--active {
+        &,
+        &:hover {
+            opacity: .75;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .gallery-wrapper {
+        margin-top: 80px;
+    }
+    .gallery-inside {
+        >p {
+            font-size: 22px;
+        }
+    }
+    .gal-carousel {
+        margin-top: -65px;
+    }
+    .gal-carousel__slides {
+        grid-template-rows: 35vw 20vw;
+        grid-row-gap: 24px;
+        grid-column-gap: 9px;
+    }
+    .gallery-banner-btns {
+        top: 14vw;
+    }
+    .gal-carousel__arrow {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .gallery-wrapper {
+        margin-top: 48px;
+    }
+    .gallery-inside {
+        >p {
+            font-size: 18px;
+            margin: 0 0 24px 0;
+        }
+    }
+    .gal-carousel__slides {
+        grid-template-rows: 65vw;
+    }
+    .gal-carousel__slide {
+        display: none;
+        >img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &--active {
+            display: block;
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .gallery-banner-btns {
+        display: none;
+    }
+}
