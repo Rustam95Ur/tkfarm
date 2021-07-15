@@ -1,7 +1,7 @@
 const url = "/";
 
 const requests = {
-    imageUrl: "http://127.0.0.1:8000",
+    imageUrl: "http://35.193.52.116:8000",
     getHeader: url + 'main/header/',
     getMain: url + 'main/main/',
     getMainCompanyBlock: url + 'main/aboutcompany/',
