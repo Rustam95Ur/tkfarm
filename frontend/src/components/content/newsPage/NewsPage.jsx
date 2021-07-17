@@ -54,16 +54,19 @@ const NewsPage = () => {
                         if (item.id != id && cnt < 3) {
                             ++cnt;
                             return (
-                                <div className="news-block" id="str">
-                                    <img src={requests.imageUrl + item.изображение} />
-                                    <div>
-                                        <span>{item.date}</span>
-                                        <p>{item.название}</p>
-                                        {/* <Link to={`/news/${item.id}`} style={{ textDecoration: 'none' }}> */}
-                                        <a href={`/news/${item.id}`}> <span id="readmore">Читать статью <div></div></span></a>
-                                        {/* </Link> */}
+                                <a href={`/news/${item.id}`} style={{ textDecoration: "none" }}>
+                                    <div className="news-block" id="str">
+                                        <img src={requests.imageUrl + item.изображение} />
+                                        <div>
+                                            <div>
+                                                <span>{item.date}</span>
+                                                <p>{item.название}</p>
+                                                <a href={`/news/${item.id}`}> <span id="readmore">Читать статью <div></div></span></a>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             );
                         } else return;
                     })}

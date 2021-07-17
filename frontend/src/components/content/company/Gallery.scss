@@ -41,6 +41,7 @@ $breakpoint-desktop: 992px;
 
 .gal-carousel {
     position: relative;
+    top: -70px;
 }
 
 // Carousel slides
@@ -172,7 +173,7 @@ $breakpoint-desktop: 992px;
         }
     }
     .gal-carousel {
-        margin-top: -65px;
+        top: -48px;
     }
     .gal-carousel__slides {
         grid-template-rows: 35vw 20vw;
@@ -181,6 +182,7 @@ $breakpoint-desktop: 992px;
     }
     .gallery-banner-btns {
         top: 14vw;
+        padding: 0 24px;
     }
     .gal-carousel__arrow {
         width: 48px;
@@ -197,6 +199,9 @@ $breakpoint-desktop: 992px;
             font-size: 18px;
             margin: 0 0 24px 0;
         }
+    }
+    .gal-carousel {
+        top: 0px;
     }
     .gal-carousel__slides {
         grid-template-rows: 65vw;

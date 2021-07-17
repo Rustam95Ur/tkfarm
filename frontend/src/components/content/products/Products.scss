@@ -21,6 +21,20 @@
     margin-bottom: 24px;
 }
 
+.item-wrapper:hover {
+    >div:nth-child(2) {
+        background: #f7f7f7;
+        transition: 300ms ease-in-out;
+        >span {
+            cursor: pointer;
+            >div {
+                transition: 0.55s ease-in-out;
+                transform: translateX(50%);
+            }
+        }
+    }
+}
+
 .item-left {
     height: 100%;
     >img {
@@ -79,13 +93,6 @@
             background-size: 100% 100%;
             display: inline-block;
             margin-left: 6px;
-        }
-    }
-    >span:hover {
-        cursor: pointer;
-        >div {
-            transition: 0.7s ease-in-out;
-            transform: translateX(50%);
         }
     }
 }

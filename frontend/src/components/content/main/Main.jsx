@@ -7,69 +7,6 @@ import Path from './History';
 import NewsMain from './Carousel';
 import Clue from './Clue';
 
-// const NewsMain = () => {
-//     const arr = [];
-//     const [news, setNews] = useState([]);
-//     const [cnt, setCnt] = useState(0);
-//     useEffect(() => {
-//         async function fetchdata() {
-//             const req = await axios.get(requests.getNewsBlock);
-//             req.data.map((i) => {
-//                 if (i.добавить_на_главную_страницу) {
-//                     arr.push(i);
-
-//                 }
-//             })
-//             setCnt(arr.length);
-//             setNews(req.data);
-//             console.log(news)
-//         }
-//         fetchdata();
-//     }, []);
-//     // console.log(arr)
-//     var current = 1;
-//     let c = 0;
-//     return (
-//         <div className="news-main-wrapper">
-//             <div className="news-main-inside">
-//                 <p>Новости </p>
-//                 <div>
-//                     <div><div></div></div>
-//                     <span>{current}/{cnt}</span>
-//                     <div><div></div></div>
-//                 </div>
-//             </div>
-//             {
-//                 news.map((item) => {
-//                     c++;
-//                     if (c == 1) {
-//                         return (
-//                             <div className="news-main-content"
-//                             // style="display: grid"
-//                             >
-//                                 <div>
-//                                     <img src={requests.imageUrl + item.изображение}></img>
-//                                     <div>
-//                                         <p><span></span> {item.название}</p>
-//                                         <p>{item.контент}</p>
-//                                     </div>
-//                                 </div>
-
-//                             </div>
-//                         )
-
-//                     }
-//                 })}
-
-//             <div className="small-button">
-//                 <div><div></div></div>
-//                 <span>{current}/{cnt}</span>
-//                 <div><div></div></div>
-//             </div>
-//         </div >
-//     );
-// }
-
 const Main = () => {
     const [mainState, setMainState] = useState([]);
     useEffect(() => {

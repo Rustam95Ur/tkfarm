@@ -45,6 +45,17 @@ const CarouselSlide = (props) => {
     r += props.slide.название;
     a += props.slide.выделенный_текст_на_главной_странице;
     const [before, after] = r.split(a);
+    // if (props.index === props.activeIndex) {
+    //     props.s = "translateX(0)";
+    // }
+    var css = {
+        transform: props.left,
+    }
+    var css2 = {
+        transform: `translateX(0%)`
+    }
+    console.log(props.index)
+    console.log(props.activeIndex)
     return (
         <li
             className={
@@ -56,14 +67,16 @@ const CarouselSlide = (props) => {
             <div className="news-main-content">
                 <a href={`/news/${props.slide.id}`} >
                     <div>
-                        <img src={requests.imageUrl + props.slide.изображение}></img>
                         <div>
-                            <p>
-                                {before}
-                                {a && <span style={{ color: "#21c69e" }}>{a}</span>}
-                                {after}
-                            </p>
-                            <p>{props.slide.контент}</p>
+                            <img src={requests.imageUrl + props.slide.изображение}></img>
+                            <div>
+                                <p>
+                                    {before}
+                                    {a && <span style={{ color: "#21c69e" }}>{a}</span>}
+                                    {after}
+                                </p>
+                                <p>{props.slide.контент}</p>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -85,6 +98,8 @@ const Carousel = (props) => {
                         index={index}
                         activeIndex={props.activeIndex}
                         slide={slide}
+                        left={props.left}
+                        right={props.right}
                     />
                 )}
             </ul>
@@ -100,6 +115,9 @@ const NewsMain = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const delay = 5000;
+    let left = `translateX(-100%)`;
+    let right = `<translateX(100%)`;
+
     useEffect(() => {
         async function fetchdata() {
             const req = await axios.get(requests.getNewsBlock);
@@ -176,15 +194,15 @@ const NewsMain = () => {
                 <div className="news-banner-btns">
                     <CarouselLeftArrow onClick={e => { goToPrevSlide(e) }} activeIndex={activeIndex} />
                     <span>{activeIndex + 1}/{cnt}</span>
-                    <CarouselRightArrow onClick={e => goToNextSlide(e)} activeIndex={activeIndex} />
+                    <CarouselRightArrow onClick={e => { goToNextSlide(e) }} activeIndex={activeIndex} />
                 </div>
             </div>
-            <Carousel slides={arr} activeIndex={activeIndex} />
+            <Carousel slides={arr} activeIndex={activeIndex} left={left} right={right} />
 
             <div className="small-button">
-                <div><div></div></div>
-                <span>{current}/{cnt}</span>
-                <div><div></div></div>
+                <div onClick={e => { goToPrevSlide(e) }} activeIndex={activeIndex}><div></div></div>
+                <span>{activeIndex + 1}/{cnt}</span>
+                <div onClick={e => { goToNextSlide(e) }} activeIndex={activeIndex}><div></div></div>
             </div>
         </div >
     );

@@ -8,19 +8,8 @@ import Gallery from './Gallery';
 const Company = () => {
     const [cert, setCert] = useState([]);
     const [ceo, setSEO] = useState([]);
-    // const [list, setList] = useState([])
-    // function splitData() {
-    //     let s = "";
-    //     console.log(ceo.данные_в_виде_списка)
+    const [comp, setComp] = useState([]);
 
-    //     ceo.данные_в_виде_списка &&
-    //         setList(ceo.данные_в_виде_списка.split(/\r?\n/)[0])
-
-    //     // list.push(s)
-
-    // }
-    // splitData();
-    // console.log(list.length)
     useEffect(() => {
         async function fetchdata() {
             const req = await axios.get(requests.getCertificate);
@@ -36,11 +25,69 @@ const Company = () => {
         }
         fetchdata();
     }, [])
+    useEffect(() => {
+        async function fetchdata() {
+            const req = await axios.get(requests.getMainCompanyBlock);
+            setComp(req.data);
+        }
+        fetchdata();
+    })
 
+    let r = "";
+    r += comp.название;
+    let a = "";
+    a += comp.выделенный_текст;
 
     return (
         <>
-            <MainCompany />
+            <div className="company-wrapper ">
+                <div className="company-inside">
+                    <p className="wow animate__fadeIn" data-wow-iteration="1" data-wow-offset="10">О компании</p>
+                </div>
+                <div className="main-company-block">
+                    <div className="main-company-inside" id="content">
+                        {comp && comp.map((item) => {
+                            r = item.название;
+                            a = item.выделенный_текст;
+                            const [before, after] = r.split(a);
+                            if (comp.indexOf(item) % 2 === 0) {
+                                return (
+                                    <div>
+                                        <div className="wow animate__fadeInLeft" data-wow-iteration="1" data-wow-offset="100" >
+                                            <p>
+                                                {before}
+                                                {a && <span style={{ color: "#21C69E;" }}>{a}</span>}
+                                                {after}
+                                            </p>
+                                            <p>{item.описание}</p>
+                                        </div>
+                                        <img className="wow animate__fadeInRight"
+                                            data-wow-iteration="1" data-wow-offset="100"
+                                            src={requests.imageUrl + item.изображение}></img>
+                                    </div>
+                                );
+                            } else {
+                                return (
+                                    <div>
+                                        <img className="wow animate__fadeInLeft"
+                                            data-wow-iteration="1" data-wow-offset="50"
+                                            src={requests.imageUrl + item.изображение}></img>
+                                        <div className="wow animate__fadeInRight"
+                                            data-wow-iteration="1" data-wow-offset="50">
+                                            <p>
+                                                {before}
+                                                {a && <span style={{ color: "#21C69E" }}>{a}</span>}
+                                                {after}
+                                            </p>
+                                            <p>{item.описание}</p>
+                                        </div>
+                                    </div>
+                                );
+                            }
+                        })}
+                    </div>
+                </div>
+            </div>
             <FullHistory />
             <div className="ceo">
                 <div className="ceo-inside">

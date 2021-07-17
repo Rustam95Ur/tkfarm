@@ -48,17 +48,21 @@ const News = (props) => {
 
 
                     return (
-                        <div className="news-block">
-                            <img src={requests.imageUrl + item.изображение} />
-                            <div>
-                                <span>{item.date}</span>
-                                <p>{item.название}</p>
-                                <p>{item.контент}</p>
-                                <a style={{ textDecoration: 'none' }} href={`news/${item.id}`}>
-                                    <span id="readmore">Читать статью <div></div></span>
-                                </a>
+                        <a style={{ textDecoration: 'none', color: "black" }} href={`news/${item.id}`}>
+                            <div className="news-block">
+                                <img src={requests.imageUrl + item.изображение} />
+                                <div>
+                                    <div>
+                                        <span>{item.date}</span>
+                                        <p>{item.название}</p>
+                                        <p>{item.контент}</p>
+
+                                        <span id="readmore">Читать статью <div></div></span>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     );
                 })}
                 {counter < amount ? (
