@@ -75,22 +75,11 @@
 
 .main-company-block {
     height: 905px;
-    background: #fcfdfd;
-    mix-blend-mode: soft-light;
+    background: white;
+    background-image: url('../../../img/ccc.svg');
+    // mix-blend-mode: soft-light;
     position: relative;
     padding-bottom: 96px;
-}
-
-.main-company-block::after {
-    content: "";
-    background: url('../../../img/pom.png');
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    position: absolute;
 }
 
 #content {
