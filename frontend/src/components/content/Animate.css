@@ -188,7 +188,7 @@
 }
 
 .fade-in-tree-bottom-history.appear {
-    animation: dash1 1s 1s linear forwards;
+    animation: dash1 1s .5s linear forwards;
 }
 
 @keyframes dash1 {

@@ -50,6 +50,7 @@ const Path = () => {
                                         <div
                                             className="history-line wow fade-in-tree-history appear"
                                             data-wow-iteration="1"
+                                            data-wow-offset="200"
                                             style={{ maxHeight: i, strokeDashArray: i, strokeDashoffset: i }}>
                                             <svg
                                                 id="header"
@@ -65,6 +66,7 @@ const Path = () => {
                                         </div>
                                         <div
                                             // ref={ref} 
+                                            data-wow-offset="100"
                                             className="history-circle wow fade-in-circle-history appear">
                                             <svg
                                                 class="path-circle"
@@ -75,7 +77,7 @@ const Path = () => {
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="50" cy="50" r="49.5" />
                                             </svg>
-                                            <div className="history-circle-num wow animate__fadeIn">
+                                            <div data-wow-offset="70" className="history-circle-num wow animate__fadeIn">
                                                 <span>{cnt}</span>
                                             </div>
                                         </div>
@@ -89,6 +91,8 @@ const Path = () => {
                                     <div className="main-history-text" ></div>
                                     <div>
                                         <div
+                                            data-wow-iteration="1"
+                                            data-wow-offset="200"
                                             className="history-line wow fade-in-tree-history appear"
                                             style={{ maxHeight: i, strokeDashArray: i, strokeDashoffset: i }}>
                                             <svg
@@ -104,6 +108,7 @@ const Path = () => {
                                             </svg>
                                         </div>
                                         <div
+                                            data-wow-offset="100"
                                             className="history-circle wow fade-in-circle-history appear">
                                             <svg
                                                 class="path-circle"
@@ -114,7 +119,7 @@ const Path = () => {
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="50" cy="50" r="49.5" />
                                             </svg>
-                                            <div className="history-circle-num">
+                                            <div data-wow-offset="70" className="history-circle-num wow animate__fadeIn">
                                                 <span className="wow animate__fadeInColor">{cnt}</span></div>
                                         </div>
                                     </div>
