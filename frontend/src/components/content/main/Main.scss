@@ -322,7 +322,10 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
+                        display: -moz-box;
+                        -moz-line-clamp: 7;
                         -webkit-line-clamp: 7;
+                        -moz-box-orient: vertical;
                         -webkit-box-orient: vertical;
                     }
                 }
