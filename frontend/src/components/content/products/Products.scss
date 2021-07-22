@@ -2,11 +2,10 @@
 
 .products-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 80px auto 0 auto;
     >p {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 31px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -15,7 +14,7 @@
 }
 
 .item-wrapper {
-    height: 364px;
+    height: 25vw;
     display: grid;
     grid-template-columns: 1fr 2.58fr;
     margin-bottom: 24px;
@@ -48,14 +47,14 @@
     padding: 48px;
     >p:nth-child(1) {
         font-family: 'Gotham Pro';
-        font-size: 20px;
+        font-size: 1.4vw;
         line-height: 140%;
         color: #333333;
         margin: 0 0 4px 0;
     }
     >p:nth-child(2) {
         font-family: 'Gotham Pro Bold';
-        font-size: 24px;
+        font-size: 1.7vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -63,7 +62,7 @@
     }
     >p:nth-child(3) {
         font-family: 'Gotham Pro';
-        font-size: 14px;
+        font-size: 0.9vw;
         line-height: 140%;
         color: #333333;
         margin: 0 0 8px 0;
@@ -75,19 +74,19 @@
     }
     >p:nth-child(5) {
         font-family: 'Gotham Pro';
-        font-size: 16px;
+        font-size: 1vw;
         line-height: 160%;
         color: #333333;
         margin: 16px 0 24px 0;
     }
     >span {
         font-family: 'Gotham Pro SemiBold';
-        font-size: 16px;
+        font-size: 1vw;
         line-height: 160%;
         color: #2976E9;
         >div {
-            width: 20px;
-            height: 10px;
+            width: 1.2vw;
+            height: 0.6vw;
             background: url('../../../img/arr_blue_right.svg');
             background-repeat: no-repeat;
             background-size: 100% 100%;

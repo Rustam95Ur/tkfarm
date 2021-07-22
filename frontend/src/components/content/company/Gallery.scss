@@ -7,11 +7,10 @@ $breakpoint-desktop: 992px;
 
 .gallery-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 0 auto;
     >p {
         font-family: 'Gotham Pro Bold';
-        font-size: 24px;
+        font-size: 1.8vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -23,7 +22,6 @@ $breakpoint-desktop: 992px;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 1300px;
     list-style-type: none;
     display: grid;
     grid-template-rows: 650px 270px;
@@ -71,7 +69,7 @@ $breakpoint-desktop: 992px;
 .gallery-banner-btns {
     display: flex;
     position: relative;
-    top: 360px;
+    top: 300px;
     z-index: 2;
     padding: 0 48px;
     >a:nth-child(2) {

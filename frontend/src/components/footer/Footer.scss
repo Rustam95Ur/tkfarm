@@ -45,7 +45,7 @@
     padding-bottom: 1px;
     >p:nth-child(2) {
         font-family: 'Gotham Pro Light';
-        font-size: 12px;
+        font-size: 0.8vw;
         line-height: 140%;
         color: #FFFFFF;
         text-align: center;
@@ -54,8 +54,7 @@
 }
 
 .footer-inside {
-    width: 80%;
-    max-width: 1280px;
+    width: 85%;
     margin: 0 auto;
     border-bottom: 1px solid #CCE6FE;
     padding-bottom: 42px;
@@ -74,7 +73,7 @@
     }
     .footnav {
         font-family: 'Gotham Pro Light';
-        font-size: 16px;
+        font-size: 1.1vw;
         line-height: 140%;
         color: #FFFFFF;
         margin: 0 0 12px 0;
@@ -83,7 +82,7 @@
 
 .footer-title {
     font-family: 'Gotham Pro SemiBold';
-    font-size: 16px;
+    font-size: 1.1vw;
     line-height: 140%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -94,11 +93,12 @@
 .footer-contact {
     margin-left: 75px;
     display: block;
+    width: 10vw;
 }
 
 .footer-main {
     font-family: 'Gotham Pro';
-    font-size: 16px;
+    font-size: 1.1vw;
     line-height: 140%;
     color: #FFFFFF;
     margin: 0 0 8px 0;
@@ -106,7 +106,7 @@
 
 .footer-text {
     font-family: 'Gotham Pro Light';
-    font-size: 16px;
+    font-size: 1.1vw;
     line-height: 140%;
     color: #FFFFFF;
     margin: 0 0 16px 0;
@@ -121,7 +121,7 @@
     padding-left: 133px;
     p {
         font-family: 'Gotham Pro Bold';
-        font-size: 24px;
+        font-size: 1.45vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -129,19 +129,19 @@
     }
     form {
         textarea {
-            width: 94%;
-            height: 90px;
+            width: 40vw;
+            height: 7vw;
             background: inherit;
             border: 1px solid #CCE6FE;
             padding: 15px;
             color: #CCE6FE;
-            font-size: 16px;
+            font-size: 1.1vw;
             margin-bottom: 16px;
             resize: none;
         }
         textarea::placeholder {
             font-family: 'Gotham Pro Light';
-            font-size: 16px;
+            font-size: 1.1vw;
             line-height: 145%;
             color: #CCE6FE;
         }
@@ -156,13 +156,13 @@
         float: right;
         span {
             font-family: 'Gotham Pro';
-            font-size: 16px;
+            font-size: 1.1vw;
             line-height: 145%;
             color: #FFFFFF;
         }
         >div {
             background: url('../../img/arrow_right.svg');
-            width: 20px;
+            width: 1.4vw;
             height: 10px;
             background-repeat: no-repeat;
             background-size: 100% 100%;

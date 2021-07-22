@@ -6,7 +6,6 @@
 
 .main-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 80px auto 0 auto;
     display: grid;
     grid-template-columns: 55.4% 44.6%;
@@ -17,7 +16,7 @@
     margin-top: 44.5px;
     >p:nth-child(1) {
         font-family: 'Gotham Pro Bold';
-        font-size: 36px;
+        font-size: 2.3vw;
         line-height: 140%;
         letter-spacing: 00.03em;
         text-transform: uppercase;
@@ -28,7 +27,7 @@
     }
     >p:nth-child(2) {
         font-family: 'Gotham Pro';
-        font-size: 18px;
+        font-size: 1.15vw;
         line-height: 145%;
         color: #333;
         margin: 24px 0 0 0;
@@ -41,16 +40,23 @@
         >div {
             p {
                 font-family: 'Gotham Pro Bold';
-                font-size: 16px;
+                font-size: 1.05vw;
                 line-height: 150%;
                 margin: 0 0 13px 0;
             }
             span {
                 font-family: 'Gotham Pro';
-                font-size: 16px;
+                font-size: 1.1vw;
                 line-height: 140%;
             }
         }
+    }
+}
+
+.main-right {
+    >img {
+        width: 93%;
+        height: 100%;
     }
 }
 
@@ -61,11 +67,10 @@
 
 .main-company-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 0 auto;
     >p {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -74,9 +79,10 @@
 }
 
 .main-company-block {
-    height: 905px;
+    height: 58vw;
     // background: white;
     background: url('../../../img/ccc.svg');
+    mix-blend-mode: lighten;
     position: relative;
     padding-bottom: 96px;
 }
@@ -90,7 +96,7 @@
         >div {
             >p:nth-child(1) {
                 font-family: 'Gotham Pro Bold';
-                font-size: 24px;
+                font-size: 1.6vw;
                 line-height: 150%;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
@@ -101,12 +107,13 @@
             }
             >p:nth-child(2) {
                 font-family: 'Gotham Pro';
-                font-size: 16px;
+                font-size: 1.04vw;
                 line-height: 145%;
                 color: #333;
             }
         }
         >img {
+            width: 100%;
             border-radius: 4px;
             transform: scale(1);
         }
@@ -137,7 +144,7 @@
                 >div {
                     >p {
                         font-family: 'Gotham Pro Light';
-                        font-size: 18px;
+                        font-size: 1.1vw;
                         line-height: 140%;
                         letter-spacing: 0.03em;
                         text-transform: uppercase;
@@ -146,7 +153,7 @@
                     }
                     >span {
                         font-family: 'Gotham Pro Bold';
-                        font-size: 28px;
+                        font-size: 1.6vw;
                         line-height: 140%;
                         letter-spacing: 0.03em;
                         text-transform: uppercase;
@@ -155,8 +162,8 @@
                 }
                 >div:nth-child(2) {
                     margin: 15px 0 0px 24px;
-                    width: 66px;
-                    height: 66px;
+                    width: 4vw;
+                    height: 4vw;
                     border: 2px solid #fff;
                     border-radius: 100%;
                     display: flex;
@@ -164,8 +171,8 @@
                     justify-content: center;
                     >div {
                         background: url('../../../img/arrow.svg');
-                        width: 10px;
-                        height: 15px;
+                        width: 0.6vw;
+                        height: 1vw;
                         background-repeat: no-repeat;
                         background-size: 100% 100%;
                     }
@@ -181,7 +188,7 @@
     >div {
         display: flex;
         height: 222px;
-        width: 560px;
+        width: 37.5vw;
         margin-left: auto;
     }
 }
@@ -219,25 +226,13 @@
 
 .clue-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 0 auto;
     >p {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-    }
-}
-
-@media screen and (min-width: 1401px) and (max-width:1540px) {
-    .blue {
-        display: grid;
-        grid-template-columns: 8vw 560px 1vw;
-        padding-right: 0;
-        >div {
-            grid-column: 2;
-        }
     }
 }
 
@@ -248,13 +243,12 @@
 
 .news-main-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 20px;
     p {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -266,7 +260,7 @@
         align-items: center;
         >span {
             font-family: 'Gotham Pro Semibold';
-            font-size: 24px;
+            font-size: 1.7vw;
             line-height: 140%;
             margin: 0 24px;
         }
@@ -305,7 +299,7 @@
                     margin-left: 80px;
                     >p {
                         font-family: 'Gotham Pro Bold';
-                        font-size: 24px;
+                        font-size: 1.6vw;
                         line-height: 140%;
                         max-width: 610px;
                         width: 79%;
@@ -319,10 +313,10 @@
                     }
                     >p:nth-child(2) {
                         font-family: 'Gotham Pro Light';
-                        font-size: 16px;
+                        font-size: 1.1vw;
                         line-height: 155%;
                         margin: 0;
-                        max-width: 590px;
+                        max-width: 40vw;
                         width: 79%;
                         color: #fff;
                         text-transform: none;
@@ -347,11 +341,10 @@
 
 .main-history-inside {
     width: 85%;
-    max-width: 1300px;
     margin: 0 auto;
     >p:nth-child(1) {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -366,7 +359,7 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     >div:nth-child(2) {
-        width: 100px;
+        width: 10vw;
         text-align: center;
     }
 }
@@ -383,26 +376,25 @@
     height: auto;
     >p:nth-child(1) {
         font-family: 'Gotham Pro SemiBold';
-        font-size: 48px;
+        font-size: 3vw;
         line-height: 150%;
         margin: 0 0 12px 0;
     }
     >p:nth-child(2) {
         font-family: 'Gotham Pro Bold';
-        font-size: 24px;
+        font-size: 1.3vw;
         line-height: 140%;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin: 0 0 16px 0;
-        min-width: 65%;
-        width: 99%;
+        width: 55%;
         span {
             color: #21C69E;
         }
     }
     >p:nth-child(3) {
         font-family: 'Gotham Pro';
-        font-size: 16px;
+        font-size: 0.93vw;
         line-height: 145%;
         color: #333333;
         margin: 0;

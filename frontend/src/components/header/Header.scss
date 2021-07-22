@@ -5,17 +5,17 @@ body {
 }
 
 .header-wrapper {
-    height: 82px;
+    height: 5vw;
     border-bottom: 1px solid #F2F2F2;
 }
 
 .header-inside {
     height: 100%;
     width: 85%;
-    max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 130px 380px 690px;
+    // grid-template-columns: 130px 380px 690px;
+    grid-template-columns: 9vw 26vw 46.85vw;
     justify-content: space-between;
     grid-template-rows: 1fr;
 }
@@ -23,22 +23,24 @@ body {
 .header-logo-block {
     display: flex;
     align-items: center;
-    width: 176px;
-    >div {
-        width: 130px;
-        height: 47px;
-        margin-right: 46px;
+    >a {
+        >div {
+            margin-right: 46px;
+        }
     }
 }
 
 .header-info {
     display: flex;
     border-left: 1px solid #F2F2F2;
-    height: 75px;
+    justify-content: space-between;
+    height: 5vw;
+    justify-content: space-around;
     div {
         >p {
             font-family: 'Gotham Pro';
-            font-size: 14px;
+            font-size: 0.93vw;
+            // font-size: 14px;
             line-height: 140%;
             color: #999;
             margin: 19px 0 4px 0;
@@ -46,16 +48,16 @@ body {
         }
         >span {
             font-family: 'Gotham Pro Light';
-            // font-size: 16px;
+            font-size: 1.1vw;
             line-height: 140%;
         }
     }
     >div:nth-child(1) {
         // margin: 0 27px 0 49px;
-        margin: 0 auto;
+        margin: 0 1.5vw 0 2vw;
     }
     >div:nth-child(2) {
-        margin: 0 35px 0 10px;
+        margin: 0 2vw 0 1vw;
     }
 }
 
@@ -69,26 +71,26 @@ body {
     border-left: 1px solid #F2F2F2;
     border-right: 1px solid #F2F2F2;
     nav {
-        margin-left: 36px;
+        margin-left: 3vw;
         .a {
             font-family: 'Gotham Pro';
-            font-size: 14px;
+            font-size: 0.9vw;
             letter-spacing: 0.03em;
             line-height: 13px;
             text-decoration: none;
             color: #000;
             text-transform: uppercase;
-            margin-right: 36px;
+            margin-right: 3vw;
         }
         .active {
             font-family: 'Gotham Pro';
-            font-size: 14px;
+            font-size: 0.9vw;
             letter-spacing: 0.03em;
             line-height: 13px;
             color: black;
             text-decoration: none;
             text-transform: uppercase;
-            margin-right: 36px;
+            margin-right: 3vw;
         }
         .a:hover,
         .active:hover {
@@ -104,18 +106,18 @@ body {
     display: block;
     >p {
         font-family: 'Gotham Pro';
-        font-size: 14px;
+        font-size: 0.9vw;
         line-height: 140%;
         color: #999;
         margin: 17px 0 4px 0;
     }
     >div {
-        width: 87px;
+        width: 5.8vw;
         display: flex;
         justify-content: space-between;
         >span {
             font-family: 'Gotham Pro';
-            font-size: 16px;
+            font-size: 1.1vw;
             line-height: 150%;
         }
         >span:hover {
@@ -204,6 +206,15 @@ body {
         border-left: none;
         border-right: 1px solid #F2F2F2;
         width: 380px;
+        height: 72px;
+        >div {
+            >p {
+                font-size: 12px;
+            }
+            >span {
+                font-size: 14px;
+            }
+        }
     }
     .burger_btn {
         position: relative;
@@ -357,6 +368,7 @@ body {
     }
     .header-info {
         display: none;
+        height: 72px;
     }
     .header-logo-block {
         width: auto;

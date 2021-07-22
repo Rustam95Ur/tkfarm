@@ -4,7 +4,6 @@
 
 .news-inside {
     width: 85%;
-    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -27,7 +26,7 @@
     margin-bottom: 40px;
     >p {
         font-family: 'Gotham Pro Bold';
-        font-size: 32px;
+        font-size: 2vw;
         line-height: 31px;
         letter-spacing: 0.03em;
         margin: 0;
@@ -46,8 +45,8 @@
     grid-template-columns: 1fr 1.6fr;
     margin-bottom: 24px;
     >img {
-        height: 296px;
-        width: 492px;
+        height: 20vw;
+        width: 35vw;
         object-fit: cover;
     }
     >div:nth-child(2) {
@@ -59,13 +58,13 @@
         >div {
             >span:nth-child(1) {
                 font-family: 'Gotham Pro';
-                font-size: 16px;
+                font-size: 1vw;
                 line-height: 150%;
                 color: #A8BDCE;
             }
             >p:nth-child(2) {
                 font-family: 'Gotham Pro SemiBold';
-                font-size: 18px;
+                font-size: 1.2vw;
                 line-height: 140%;
                 letter-spacing: 0.03em;
                 text-transform: uppercase;
@@ -74,7 +73,7 @@
             }
             >p:nth-child(3) {
                 font-family: 'Gotham Pro Light';
-                font-size: 16px;
+                font-size: 1vw;
                 line-height: 150%;
                 color: #333333;
                 overflow: hidden;
@@ -85,11 +84,11 @@
             }
             #readmore {
                 font-family: 'Gotham Pro';
-                font-size: 16px;
+                font-size: 1vw;
                 line-height: 150%;
                 color: #2976E9;
                 >div {
-                    width: 5px;
+                    width: 0.4vw;
                     height: 10px;
                     background: url('../../../img/blue_arr.svg');
                     background-repeat: no-repeat;
@@ -125,10 +124,10 @@
     align-items: center;
     justify-content: center;
     font-family: 'Gotham Pro';
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 150%;
-    width: 239px;
-    height: 56px;
+    width: 20vw;
+    height: 4vw;
     margin: 48px auto 0 auto;
 }
 
